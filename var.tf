@@ -2,6 +2,7 @@ variable "tags" {}
 variable "env" {}
 variable "subnet_ids" {}
 variable "vpc_id" {}
+variable "rds_type" {}
 variable "db_port" {}
 variable "sg_ingress_cidr" {}
 variable "engine_family" {}
