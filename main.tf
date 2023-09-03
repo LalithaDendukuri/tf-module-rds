@@ -47,6 +47,7 @@ resource "aws_rds_cluster" "main" {
   tags                             = merge(local.tags, { Name = "${local.name_prefix}-cluster" })
 }
 
+
 resource "aws_rds_cluster_instance" "cluster_instances" {
   count              = var.instance_count
   identifier         = "${local.name_prefix}-cluster-instance-${count.index + 1}"
